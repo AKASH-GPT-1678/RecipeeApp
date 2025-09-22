@@ -13,11 +13,17 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@neondatabase/serverless": "^1.0.1",
     "@prisma/client": "^6.11.1",
     "cors": "^2.8.5",
+    "cron": "^4.3.3",
     "dotenv": "^17.0.1",
+    "drizzle-orm": "^0.44.5",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "prisma": "^6.11.1"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.4"
   }
 }
