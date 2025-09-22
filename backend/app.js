@@ -4,6 +4,7 @@ import decodeToken from './middlewares/checkTokenMiddleware.js';
 import router from './routes/router.js';
 import cors from 'cors';
 
+
 app.use(express.json());
 app.use(cors());
 app.use(decodeToken);
