@@ -121,6 +121,36 @@ const SignUp = () => {
                                 
                             </TouchableOpacity>
                         </View>
+                        <TouchableOpacity
+                        style={[authStyles.authButton , loading && authStyles.buttonDisabled]}
+                        onPress={handleSignIn}
+                        disabled={loading}
+                        activeOpacity={0.8}
+
+                        
+                        
+                        >
+                            <Text style={authStyles.buttonText}>
+                                {
+                                    loading ? "Signing in" : "Sign In"
+                                }
+
+                            </Text>
+
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                        style={authStyles.linkContainer}
+                        onPress={()=> router.push("/(auth)/sign-up")}
+                        
+                        
+                        >
+                            <Text style={authStyles.linkText}>
+                                Don&apos;t have and account?
+                                <Text style={authStyles.link}> Sign Up</Text>
+
+                            </Text>
+
+                        </TouchableOpacity>
 
                     </View>
 
