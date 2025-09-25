@@ -140,7 +140,7 @@ const SignUp = () => {
                         </TouchableOpacity>
                         <TouchableOpacity
                         style={authStyles.linkContainer}
-                        onPress={()=> router.push("/(auth)/sign-up")}
+                        onPress={()=> router.push("/(tabs)")}
                         
                         
                         >

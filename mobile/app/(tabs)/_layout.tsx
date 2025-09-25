@@ -5,8 +5,8 @@ import {Ionicons} from "@expo/vector-icons"
 import {Icon} from "expo-router/unstable-native-tabs";
 import {COLORS} from "@/constants/colors";
 export const TabsLayout = () => {
-    const { isSignedIn } = useAuth();
-    if(!isSignedIn) return <Redirect href={"/(auth)/sign-in"}/>
+    // const { isSignedIn } = useAuth();
+    // if(!isSignedIn) return <Redirect href={"/(auth)/sign-in"}/>
 
     return <Tabs screenOptions={{headerShown : false, tabBarActiveTintColor : COLORS.primary, tabBarInactiveBackgroundColor : COLORS.textLight,
         tabBarStyle: {

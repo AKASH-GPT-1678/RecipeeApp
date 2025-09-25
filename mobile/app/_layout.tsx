@@ -8,10 +8,10 @@ export default function RootLayout() {
   return (
     <ClerkProvider tokenCache={tokenCache}>
 
-        <SafeScreen>
+      <SafeScreen>
 
         <Slot />
-        </SafeScreen>
+      </SafeScreen>
 
 
 
